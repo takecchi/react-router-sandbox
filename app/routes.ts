@@ -14,19 +14,10 @@ export default [
     // layout.tsxがない為、routeとして処理
     route("about", "routes/(group)/about/page.tsx"),
 
-
     // shopはルートとして解釈
     // [[]]で囲ってあるので[[...slug]]はキャッチオールルートとして解釈
     // layout.tsxがない為、routeとして処理
     route("shop/*", "routes/shop/[[...slug]]/page.tsx"),
-
-
-    /**
-     * menuはルートとして解釈
-     * layout.tsxがある為、route + layoutとして処理
-     * page.tsxがある為、indexとして処理
-     * subはルートとして解釈し、page.tsxがある為、routeとして処理
-     */
 
     // menuはルートとして解釈
     // layout.tsxがある為、layoutとして処理
